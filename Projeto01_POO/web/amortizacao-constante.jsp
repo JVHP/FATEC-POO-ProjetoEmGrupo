@@ -9,9 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Amortização Constante</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@include file="WEB-INF/jspf/menu.jsp" %>
+        <h1>Amortização Constante</h1>
+        <%@include file="WEB-INF/jspf/footer.jsp"%>
     </body>
 </html>

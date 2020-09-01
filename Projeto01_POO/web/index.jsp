@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/header.jsp"%>
+        <%@include file="WEB-INF/jspf/menu.jsp"%>
         <%@include file="WEB-INF/jspf/footer.jsp"%>
         
         

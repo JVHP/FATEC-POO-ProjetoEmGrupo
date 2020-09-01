@@ -24,14 +24,10 @@
         color: blue;
     }
 </style>    
-<%  
-    var a = "amortizacao-constante.jsp";
-    var b = "amortizacao-americana.jsp";
-    var c = "tabela-price.jsp";
-    
-    if(c==c){
-         out.print("<div>Amortização Constante</div>");
-    }else{
-        
-    }
-%>
+<div>
+    <a href="#">Menu</a>
+    <a href="amortizacao-constante.jsp">Amortização Constante</a>
+    <a href="amortizacao-americana.jsp">Amortização Americana</a>
+    <a href="tabela-price.jsp">Tabela Price</a>
+    <a href="#"></a>
+</div>
