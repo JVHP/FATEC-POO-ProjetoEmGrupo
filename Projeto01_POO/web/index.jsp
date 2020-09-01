@@ -14,6 +14,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jsp"%>
+        <h1>Menu</h1>
         <%@include file="WEB-INF/jspf/footer.jsp"%>
         
         
