@@ -16,17 +16,18 @@
     div a{
         padding: 10px;
         text-decoration: none;
+        color: beige;
     }
     div a:hover{
         padding: 10px;
         text-decoration: none;
-        color: beige;
+        color: blue;
     }
 </style>    
 <div>
     <a href="#">Menu</a>
-    <a href="#">Amortização Constante</a>
-    <a href="#">Amortização Americana</a>
-    <a href="#">Tabela Price</a>
+    <a href="amortizacao-constante.jsp">Amortização Constante</a>
+    <a href="amortizacao-americana.jsp">Amortização Americana</a>
+    <a href="tabela-price">Tabela Price</a>
     <a href="#"></a>
 </div>
