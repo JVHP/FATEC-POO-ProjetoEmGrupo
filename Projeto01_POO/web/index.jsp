@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Projeto 10 || POO</title>
+        <title>Projeto 01 || POO</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jsp"%>
