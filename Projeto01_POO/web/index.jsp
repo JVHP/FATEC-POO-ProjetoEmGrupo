@@ -5,16 +5,17 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
+<%@include file="WEB-INF/jspf/style.jsp"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Projeto 01 || POO</title>
     </head>
     <body>
+        <%@include file="WEB-INF/jspf/header.jsp"%>
         <%@include file="WEB-INF/jspf/menu.jsp"%>
-        <h1>Menu</h1>
+        <h1>Página Principal</h1>
         <%@include file="WEB-INF/jspf/footer.jsp"%>
         
         
