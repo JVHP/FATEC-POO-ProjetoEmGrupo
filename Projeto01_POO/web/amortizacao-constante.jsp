@@ -1,5 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <%@include file="WEB-INF/jspf/style.jsp"%>
+<%@include file="WEB-INF/jspf/header.jsp"%>
+<%@include file="WEB-INF/jspf/menu.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,10 +10,7 @@
         <title>Amortização Constante</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/header.jsp"%>
-        <%@include file="WEB-INF/jspf/menu.jsp" %>
         <h1>Amortização Constante</h1>
-        <%@include file="WEB-INF/jspf/footer.jsp"%>
         
         <form>
             
@@ -94,3 +94,4 @@
         
     </body>
 </html>
+<%@include file="WEB-INF/jspf/footer.jsp"%>
