@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
     *{
         font-family: arial;
@@ -10,14 +10,12 @@
 	text-align: center;
     }
     .menu{
-        background-color: grey;
-	padding: 20px;
         font-size: 17px;
     }
     .menu a{
         padding: 10px;
         text-decoration: none;
-        color: beige;
+        color: silver;
     }
     .menu a:hover{
         padding: 10px;
