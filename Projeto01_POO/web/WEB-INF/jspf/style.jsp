@@ -4,6 +4,7 @@
 <style>
     *{
         font-family: arial;
+        text-align: center;
     }
     .header{
         background-color: silver;
@@ -26,9 +27,11 @@
     .footer{
         background-color: silver;
 	padding: 20px;
+        position: absolute;
+        bottom:0;
+        width: 100%
     }
-    
-    .header, .menu, .footer{
+    .header, .menu, .footer, .form{
         text-align: center;
     }
 </style>

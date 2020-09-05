@@ -12,8 +12,8 @@
     <body>
         <h1>Amortização Constante</h1>
         
-        <form>
-            
+        <form class="form">
+           
             Empréstimo: <input type="number" name="pv" placeholder="Valor do empréstimo" required>
             Juros: <input type="number" name="i" placeholder="Valor dos juros (mensais)" required>
             Meses: <input type="number" name="n" placeholder="Em quantos meses?" required>
@@ -37,7 +37,10 @@
                 }
             %>
             
-            <table border="1">
+            
+            <h1>TABELA</h1>
+        
+            <table border="1" align="center" class="thead-light">
             <tr>
                 <th>Meses</th>
                 <th>Pagamento</th>
@@ -87,9 +90,7 @@
                 <td><%= total_juros %></td>
             </tr>
             </table>
-            
-            
-            
+  
         </form>
         
     </body>
