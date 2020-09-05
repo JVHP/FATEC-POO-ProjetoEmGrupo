@@ -1,5 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <%@include file="WEB-INF/jspf/style.jsp"%>
+<%@include file="WEB-INF/jspf/header.jsp"%>
+<%@include file="WEB-INF/jspf/menu.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,13 +10,10 @@
         <title>Amortização Constante</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/header.jsp"%>
-        <%@include file="WEB-INF/jspf/menu.jsp" %>
         <h1>Amortização Constante</h1>
-        <%@include file="WEB-INF/jspf/footer.jsp"%>
         
-        <form>
-            
+        <form class="form">
+           
             Empréstimo: <input type="number" name="pv" placeholder="Valor do empréstimo" required>
             Juros: <input type="number" name="i" placeholder="Valor dos juros (mensais)" required>
             Meses: <input type="number" name="n" placeholder="Em quantos meses?" required>
@@ -37,7 +37,10 @@
                 }
             %>
             
-            <table border="1">
+            
+            <h1>TABELA</h1>
+        
+            <table border="1" align="center" class="thead-light">
             <tr>
                 <th>Meses</th>
                 <th>Pagamento</th>
@@ -87,10 +90,9 @@
                 <td><%= total_juros %></td>
             </tr>
             </table>
-            
-            
-            
+  
         </form>
         
     </body>
 </html>
+<%@include file="WEB-INF/jspf/footer.jsp"%>

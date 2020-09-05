@@ -5,7 +5,10 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <%@include file="WEB-INF/jspf/style.jsp"%>
+<%@include file="WEB-INF/jspf/header.jsp"%>
+<%@include file="WEB-INF/jspf/menu.jsp"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,9 +16,7 @@
         <title>Tabela Price</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/header.jsp"%>
-        <%@include file="WEB-INF/jspf/menu.jsp"%>
         <h1>Tabela Price</h1>
-        <%@include file="WEB-INF/jspf/footer.jsp"%>
     </body>
 </html>
+<%@include file="WEB-INF/jspf/footer.jsp"%>
