@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 <style>
     *{
         font-family: arial;
@@ -25,7 +26,6 @@
     .footer{
         background-color: silver;
 	padding: 20px;
-	text-align: center;
     }
     
     .header, .menu, .footer{

@@ -1,3 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<div class="footer"><p>Obrigado pelo Acesso!<p></div>
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Obrigado pelo acesso!</span>
+    </div>
+</footer>
