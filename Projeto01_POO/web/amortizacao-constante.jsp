@@ -37,7 +37,6 @@
                 }
             %>
             
-            
             <h1>TABELA</h1>
         
             <table border="1" align="center" class="thead-light">

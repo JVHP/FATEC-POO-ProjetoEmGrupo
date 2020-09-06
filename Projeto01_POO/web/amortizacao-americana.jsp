@@ -50,7 +50,9 @@
             }
             %>  
              
-            <table border="1">
+            <h1>TABELA</h1>
+            
+            <table border="1" align="center" class="thead-light">
             <tr>
                 <th>Meses</th>
                 <th>Pagamento</th>
