@@ -8,7 +8,6 @@
 
 <%@include file="WEB-INF/jspf/style.jsp"%>
 
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +16,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jsp"%>
-        <%@include file="WEB-INF/jspf/menu.jsp" %>
+<%@include file="WEB-INF/jspf/menu.jsp" %>
         <h1>Amortização Americana</h1>
 
         <%@include file="WEB-INF/jspf/footer.jsp"%>
@@ -96,5 +95,7 @@
 </table>
         </form>
 
+
     </body>
 </html>
+
