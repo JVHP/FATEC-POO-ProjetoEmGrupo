@@ -15,10 +15,10 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jsp"%>
-<%@include file="WEB-INF/jspf/menu.jsp" %>
+        <%@include file="WEB-INF/jspf/menu.jsp" %>
         <h1>Amortização Americana</h1>
-
-        <%@include file="WEB-INF/jspf/footer.jsp"%>
+        
+        
         <form>
 
             Empréstimo: <input type="number" name="pv" placeholder="Valor do empréstimo" required>
@@ -41,6 +41,7 @@
                 n1 = Float.parseFloat(request.getParameter("pv"));
                 n2 = Float.parseFloat(request.getParameter("i"));
                 n3 = Float.parseFloat(request.getParameter("n"));
+                
             }catch(Exception ex){
             n1 = 0;
             n2 = 0;
@@ -93,10 +94,9 @@
                 <td><%= n1 %></td>
                 <td><%= juros * cont %></td>
             </tr>
-</table>
-        </form>
-
-
+        </table>
+    </form>    
     </body>
+    <%@include file="WEB-INF/jspf/footer.jsp"%>
 </html>
 

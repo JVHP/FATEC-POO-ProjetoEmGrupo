@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<style>
+<style type="text/css">
     *{
         font-family: arial;
         text-align: center;
@@ -26,10 +26,10 @@
     }
     .footer{
         background-color: silver;
-	padding: 20px;
-        position: absolute;
+	padding: 30px;
+        position: relative;
         bottom:0;
-        width: 100%
+        width: 100%;
     }
     .header, .menu, .footer, .form{
         text-align: center;

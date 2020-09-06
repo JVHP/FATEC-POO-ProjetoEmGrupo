@@ -3,6 +3,7 @@
 <%@include file="WEB-INF/jspf/style.jsp"%>
 <%@include file="WEB-INF/jspf/header.jsp"%>
 <%@include file="WEB-INF/jspf/menu.jsp" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -89,9 +90,7 @@
                 <td><%= total_juros %></td>
             </tr>
             </table>
-  
         </form>
-        
     </body>
 </html>
 <%@include file="WEB-INF/jspf/footer.jsp"%>
