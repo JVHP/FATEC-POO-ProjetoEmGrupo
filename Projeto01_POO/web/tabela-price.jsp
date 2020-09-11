@@ -1,10 +1,5 @@
-<%-- 
-    Document   : amortizacao-americana
-    Created on : 1 de set de 2020, 17:52:26
-    Author     : trize
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.text.DecimalFormat"%>
 
 <%@include file="WEB-INF/jspf/style.jsp"%>
 <%@include file="WEB-INF/jspf/header.jsp"%>
@@ -17,6 +12,86 @@
     </head>
     <body>
         <h1>Tabela Price</h1>
+        <form class="form">
+           
+            Empréstimo: <input type="number" name="pv" placeholder="Valor do empréstimo" required>
+            Juros: <input type="number" name="i" placeholder="Valor dos juros (mensais)" required>
+            Meses: <input type="number" name="n" placeholder="Em quantos meses?" required>
+            <input type="submit" value="Enviar">
+            
+            <%
+            Exception requestException = null;
+            
+            double pv, i, n, a, pagamento, j, total, total_amortizacao, total_juros;
+            
+            try{
+                pv = Float.parseFloat(request.getParameter("pv"));
+                i = Float.parseFloat(request.getParameter("i"));
+                i = (i/100);
+                n = Float.parseFloat(request.getParameter("n"));
+                
+            }catch(Exception ex){
+                pv = 0;
+                i = 0;
+                n = 0;
+                requestException = ex;
+                }
+            %>
+            
+            <h1>TABELA</h1>
+        
+            <table border="1" align="center" class="thead-light">
+            <tr>
+                <th>Meses</th>
+                <th>Pagamento</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Saldo Devedor</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><%= pv %></td>
+            </tr>
+            
+            <%
+            total_juros = 0;
+            total_amortizacao = 0;
+            DecimalFormat format = new DecimalFormat("#####.##");
+
+            pagamento = (pv)/((Math.pow(1+i,n)-1)/(Math.pow(1+i,n)*i));
+
+            for(int x = 1; x <= n; x++){
+
+            j = (pv*i);
+
+            a = (pagamento-j);
+            pv = pv-a;
+            %>
+            <tr>
+                <td><%= format.format(x) %></td>
+                <td><%= format.format(pagamento) %></td>
+                <td><%= format.format(a) %></td>
+                <td><%= format.format(j) %></td>
+                <td><%= format.format(pv) %></td>
+            </tr>
+            <% 
+            total_juros = total_juros + j;
+            total_amortizacao = total_amortizacao + a;
+            }
+
+            total = total_amortizacao + total_juros;
+            %>
+            <tr>
+                <td>Total</td>
+                <td><%= format.format(total) %></td>
+                <td><%= format.format(total_amortizacao) %></td>
+                <td><%= format.format(total_juros) %></td>
+            </tr>
+            </table>
+        </form>
     </body>
 </html>
 <%@include file="WEB-INF/jspf/footer.jsp"%>
