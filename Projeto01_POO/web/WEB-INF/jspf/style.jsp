@@ -6,33 +6,50 @@
         font-family: arial;
 
     }
+    
     .header{
         background-color: silver;
-	padding: 30px;
-	text-align: center;
+	padding: 60px;
+        margin-bottom: 0;
+        
     }
     .menu{
         font-size: 17px;
+        
     }
+    
     .menu a{
         padding: 10px;
         text-decoration: none;
         color: silver;
+        
     }
+    
     .menu a:hover{
         padding: 10px;
         text-decoration: none;
         color: blue;
+        
     }
+    
     .footer{
         background-color: silver;
 	padding: 30px;
         position: relative;
         bottom:0;
         width: 100%;
+        text-align: center;
+        
     }
+    
     .table-sm{
         width:50%;
+        
+    }
+    
+    .card-body{
+        background-color: whitesmoke;
+        
     }
     
 </style>
