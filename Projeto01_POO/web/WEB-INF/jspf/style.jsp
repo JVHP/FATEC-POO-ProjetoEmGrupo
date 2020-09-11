@@ -4,7 +4,7 @@
 <style type="text/css">
     *{
         font-family: arial;
-        text-align: center;
+
     }
     .header{
         background-color: silver;
@@ -31,7 +31,8 @@
         bottom:0;
         width: 100%;
     }
-    .header, .menu, .footer, .form{
-        text-align: center;
+    .table-sm{
+        width:50%;
     }
+    
 </style>

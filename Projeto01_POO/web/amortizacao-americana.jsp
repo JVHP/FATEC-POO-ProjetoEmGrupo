@@ -12,14 +12,21 @@
         <title>Amortização Americana</title>
     </head>
     <body>
-        <h1>Amortização Americana</h1>
+        <div  align="center">
+            <div class="container">
+            <h1>Amortização Americana</h1>
         
-        <form>
-
-            Empréstimo: <input type="number" name="pv" placeholder="Valor do empréstimo" required>
-            Juros: <input type="number" name="i" placeholder="Valor dos juros (mensais)" required>
-            Meses: <input type="number" name="n" placeholder="Em quantos meses?" required>
-            <input type="submit" value="Enviar">
+                <form>
+                    <div class="form-group">Empréstimo:
+                        <input type="number" class="form-control col-sm-4" name="pv" placeholder="Valor do empréstimo" required>
+                    </div>
+                    <div class="form-group">Juros: 
+                        <input type="number" class="form-control col-sm-4" name="i" placeholder="Valor dos juros (mensais)" required>
+                    </div>
+                    <div class="form-group">Meses: 
+                        <input type="number" class="form-control col-sm-4" name="n" placeholder="Em quantos meses?" required>
+                    </div>
+                        <input type="submit" value="Enviar" class="btn btn-primary">
 
             <%
             DecimalFormat format = new DecimalFormat("#####.##");
@@ -49,23 +56,27 @@
 
             %>  
              
-            <h1>TABELA</h1>
+            <p><br/></p>
             
-            <table border="1" align="center" class="thead-light">
-            <tr>
-                <th>Meses</th>
-                <th>Pagamento</th>
-                <th>Amortização</th>
-                <th>Juros</th>
-                <th>Saldo Devedor</th>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td><%= format.format(n1) %></td>
-            </tr>
+            <div class="table-sm" align="center">
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Meses</th>
+                            <th>Pagamento</th>
+                            <th>Amortização</th>
+                            <th>Juros</th>
+                            <th>Saldo Devedor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><%= format.format(n1) %></td>
+                        </tr>
             
                      
             <%
@@ -77,35 +88,39 @@
                     for(int z = 1; z<n3; z++){
                 %>
             
-             <tr>
-                <td><%= format.format(z) %></td>
-                <td><%= format.format(juros) %></td>
-                <td><%= format.format(amortizacao) %></td>
-                <td><%= format.format(juros) %></td>
-                <td><%= format.format(n1) %></td>
-            </tr>
+                        <tr>
+                            <td><%= format.format(z) %></td>
+                            <td><%= format.format(juros) %></td>
+                            <td><%= format.format(amortizacao) %></td>
+                            <td><%= format.format(juros) %></td>
+                            <td><%= format.format(n1) %></td>
+                        </tr>
             
             <%
          
                     }
             %>
-              <tr>
-                <td><%= format.format(aux) %></td>
-                <td><%= format.format(n1 + juros) %></td>
-                <td><%= format.format(n1) %></td>
-                <td><%= format.format(juros) %></td>
-                <td><%= 0 %></td>
-            </tr>
-                         
-             
-             <tr>
-                <td>Total</td>
-                <td><%= format.format(n1 + juros * aux) %></td>
-                <td><%= format.format(n1) %></td>
-                <td><%= format.format(juros * aux) %></td>
-            </tr>
-        </table>
-    </form>    
+                        <tr>
+                            <td><%= format.format(aux) %></td>
+                            <td><%= format.format(n1 + juros) %></td>
+                            <td><%= format.format(n1) %></td>
+                            <td><%= format.format(juros) %></td>
+                            <td><%= 0 %></td>
+                        </tr>                    
+                        <tr>
+                            <td>Total</td>
+                            <td><%= format.format(n1 + juros * aux) %></td>
+                            <td><%= format.format(n1) %></td>
+                            <td><%= format.format(juros * aux) %></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+                        
+                </form>  
+            </div>  
+        </div>
+                        
     </body>
     <%@include file="WEB-INF/jspf/footer.jsp"%>
 </html>
