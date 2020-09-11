@@ -58,9 +58,4 @@
         background-color: #262E33;
         
     }
-    
-    input{
-        background-color: #262E33;
-        
-    }
 </style>

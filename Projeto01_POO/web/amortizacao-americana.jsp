@@ -19,13 +19,13 @@
         
                 <form>
                     <div class="form-group">Empréstimo:
-                        <input type="number" class="form-control col-sm-4 bg-dark" name="pv" placeholder="Valor do empréstimo" required>
+                        <input type="number" class="form-control col-sm-4 bg-dark text-white" name="pv" placeholder="Valor do empréstimo" required>
                     </div>
                     <div class="form-group">Juros: 
-                        <input type="number" class="form-control col-sm-4 bg-dark" name="i" placeholder="Valor dos juros (mensais)" required>
+                        <input type="number" class="form-control col-sm-4 bg-dark text-white" name="i" placeholder="Valor dos juros (mensais)" required>
                     </div>
                     <div class="form-group">Meses: 
-                        <input type="number" class="form-control col-sm-4 bg-dark" name="n" placeholder="Em quantos meses?" required>
+                        <input type="number" class="form-control col-sm-4 bg-dark text-white" name="n" placeholder="Em quantos meses?" required>
                     </div>
                         <input type="submit" value="Enviar" class="btn btn-primary">
 
