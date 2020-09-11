@@ -14,11 +14,12 @@
         <br/>
         <div class="container">
             <div class="col-12 row">
+                <div class="col-1"></div>
                 <div class="col-6">
                     <h1>Bem vindo ao nosso site!</h1>
                     <h6><br>Conheça nosso grupo:<br/><br/>Gabriel Ferreira<br/>João Paulo<br/>José Vinícius<br/>Rogério Gongora</h6>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <h1>O'que nosso site faz?</h1>
                     <p>Nosso site faz o calculo de Amortização segundo aos sistemas Constante e Americano e tambem faz o calculo da Tabela-Price</p>
                 </div> 

@@ -12,20 +12,20 @@
         <title>Amortização Constante</title>
     </head>
     <body>
-        
+        <br/>
         <div align="center">
             <div class="container">
                 <h1>Amortização Constante</h1>
                 
                 <form>
                     <div class="form-group">Empréstimo:
-                        <input type="number" class="form-control col-sm-4" name="pv" placeholder="Valor do empréstimo" required>
+                        <input type="number" class="form-control col-sm-4 bg-dark" name="pv" placeholder="Valor do empréstimo" required>
                     </div>
                     <div class="form-group">Juros: 
-                        <input type="number" class="form-control col-sm-4" name="i" placeholder="Valor dos juros (mensais)" required>
+                        <input type="number" class="form-control col-sm-4 bg-dark" name="i" placeholder="Valor dos juros (mensais)" required>
                     </div>
                     <div class="form-group">Meses: 
-                        <input type="number" class="form-control col-sm-4" name="n" placeholder="Em quantos meses?" required>
+                        <input type="number" class="form-control col-sm-4 bg-dark" name="n" placeholder="Em quantos meses?" required>
                     </div>
                     <input type="submit" value="Enviar" class="btn btn-primary">
             
@@ -52,7 +52,7 @@
             <p><br/></p>
             
             <div class="table-sm" align="center">
-                <table class="table table-bordered">
+                <table class="table-dark table-bordered">
                     <thead class="thead-light">    
                         <tr>
                             <th>Meses</th>

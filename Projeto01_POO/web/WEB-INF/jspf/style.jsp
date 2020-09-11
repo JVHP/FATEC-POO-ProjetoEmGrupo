@@ -4,13 +4,20 @@
 <style type="text/css">
     *{
         font-family: arial;
-
+        color: whitesmoke;
+       
+    }
+    
+    body{
+        background-color: #262E33;
+         
     }
     
     .header{
-        background-color: silver;
+        background-color: #262E33;
 	padding: 60px;
         margin-bottom: 0;
+        
         
     }
     .menu{
@@ -21,7 +28,7 @@
     .menu a{
         padding: 10px;
         text-decoration: none;
-        color: silver;
+        color: whitesmoke;
         
     }
     
@@ -33,7 +40,7 @@
     }
     
     .footer{
-        background-color: silver;
+        background-color: #262E33;
 	padding: 30px;
         position: relative;
         bottom:0;
@@ -48,8 +55,12 @@
     }
     
     .card-body{
-        background-color: whitesmoke;
+        background-color: #262E33;
         
     }
     
+    input{
+        background-color: #262E33;
+        
+    }
 </style>
