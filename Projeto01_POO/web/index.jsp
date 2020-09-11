@@ -17,7 +17,13 @@
                 <div class="col-1"></div>
                 <div class="col-6">
                     <h1>Bem vindo ao nosso site!</h1>
-                    <h6><br>Conheça nosso grupo:<br/><br/>Gabriel Ferreira<br/>João Paulo<br/>José Vinícius<br/>Rogério Gongora</h6>
+                    <h6>Conheça nosso grupo:</h6>
+                    <ul>
+                        <li>Gabriel Ferreira</li>
+                        <li>João Paulo</li>
+                        <li>José Vinícius</li>
+                        <li>Rogério Gongora</li>
+                    </ul>    
                 </div>
                 <div class="col-sm-5">
                     <h1>O'que nosso site faz?</h1>
