@@ -36,7 +36,7 @@
             float totalAmortizacao;
             float amortizacao;
             float amortizacaoFinal = 0;
-            int cont = 0;
+                        
             try{
                 n1 = Float.parseFloat(request.getParameter("pv"));
                 n2 = Float.parseFloat(request.getParameter("i"));
@@ -48,6 +48,8 @@
             n3 = 0;
             requestException = ex;
             }
+           int aux = Math.round(n3);
+
             %>  
              
             <h1>TABELA</h1>
@@ -60,14 +62,22 @@
                 <th>Juros</th>
                 <th>Saldo Devedor</th>
             </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><%= n1 %></td>
+            </tr>
+            
                      
              <%
              amortizacao =  0;   
             juros = (n1*n2)/100;
             totalJuros = juros*n3;
-            for(int z = 0; z<=n3-1; z++){
-                cont = cont + 1;
-            %>
+            for(int z = 1; z<n3; z++){
+                %>
+            
              <tr>
                 <td><%= z %></td>
                 <td><%= juros %></td>
@@ -80,19 +90,20 @@
          
             }
             %>
-               
-             <tr>
-                <td><%= cont %></td>
+              <tr>
+                <td><%= aux %></td>
                 <td><%= n1 + juros %></td>
                 <td><%= n1 %></td>
                 <td><%= juros %></td>
                 <td><%= 0 %></td>
             </tr>
+                         
+             
              <tr>
                 <td>Total</td>
-                <td><%= n1 + juros * cont %></td>
+                <td><%= n1 + juros * aux %></td>
                 <td><%= n1 %></td>
-                <td><%= juros * cont %></td>
+                <td><%= juros * aux %></td>
             </tr>
         </table>
     </form>    
