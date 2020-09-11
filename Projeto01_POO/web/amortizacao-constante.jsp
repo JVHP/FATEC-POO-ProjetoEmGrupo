@@ -1,8 +1,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.text.DecimalFormat"%>
 
 <%@include file="WEB-INF/jspf/style.jsp"%>
 <%@include file="WEB-INF/jspf/header.jsp"%>
-<%@include file="WEB-INF/jspf/menu.jsp" %>
+<%@include file="WEB-INF/jspf/menu.jsp"%>
 
 <!DOCTYPE html>
 <html>
@@ -21,6 +22,8 @@
             <input type="submit" value="Enviar">
             
             <%
+            DecimalFormat format = new DecimalFormat("#####.##");
+            
             Exception requestException = null;
             float pv, i, n, a, pagamento, j, total, total_amortizacao, total_juros;
             
@@ -53,7 +56,7 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td><%= pv %></td>
+                <td><%= format.format(pv) %></td>
             </tr>
             
             <%
@@ -62,7 +65,7 @@
             a = (pv/n);
             total_juros = 0;
             total_amortizacao = 0;
-            
+
             for(int x = 1; x <= n; x++){
            
             j = (pv*i);
@@ -70,11 +73,11 @@
             pv = pv-a;
             %>
             <tr>
-                <td><%= x %></td>
-                <td><%= pagamento %></td>
-                <td><%= a %></td>
-                <td><%= j %></td>
-                <td><%= pv %></td>
+                <td><%= format.format(x) %></td>
+                <td><%= format.format(pagamento) %></td>
+                <td><%= format.format(a) %></td>
+                <td><%= format.format(j) %></td>
+                <td><%= format.format(pv) %></td>
             </tr>
             <% 
             total_juros = total_juros + j;
@@ -85,9 +88,9 @@
             %>
             <tr>
                 <td>Total</td>
-                <td><%= total %></td>
-                <td><%= total_amortizacao %></td>
-                <td><%= total_juros %></td>
+                <td><%= format.format(total) %></td>
+                <td><%= format.format(total_amortizacao) %></td>
+                <td><%= format.format(total_juros) %></td>
             </tr>
             </table>
         </form>

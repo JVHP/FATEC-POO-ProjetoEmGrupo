@@ -1,11 +1,9 @@
-<%-- 
-    Document   : amortizacao-americana
-    Created on : 1 de set de 2020, 17:52:26
-    Author     : trize
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.text.DecimalFormat"%>
+
 <%@include file="WEB-INF/jspf/style.jsp"%>
+<%@include file="WEB-INF/jspf/header.jsp"%>
+<%@include file="WEB-INF/jspf/menu.jsp"%>
 
 <!DOCTYPE html>
 <html>
@@ -14,10 +12,7 @@
         <title>Amortização Americana</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/header.jsp"%>
-        <%@include file="WEB-INF/jspf/menu.jsp" %>
         <h1>Amortização Americana</h1>
-        
         
         <form>
 
@@ -27,6 +22,8 @@
             <input type="submit" value="Enviar">
 
             <%
+            DecimalFormat format = new DecimalFormat("#####.##");
+            
             Exception requestException = null;
             float n1;
             float n2;
@@ -67,43 +64,45 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td><%= n1 %></td>
+                <td><%= format.format(n1) %></td>
             </tr>
             
                      
-             <%
-             amortizacao =  0;   
-            juros = (n1*n2)/100;
-            totalJuros = juros*n3;
-            for(int z = 1; z<n3; z++){
+            <%
+                amortizacao =  0; 
+                
+             
+                juros = (n1*n2)/100;
+                totalJuros = juros*n3;
+                    for(int z = 1; z<n3; z++){
                 %>
             
              <tr>
-                <td><%= z %></td>
-                <td><%= juros %></td>
-                <td><%= amortizacao %></td>
-                <td><%= juros %></td>
-                <td><%= n1 %></td>
+                <td><%= format.format(z) %></td>
+                <td><%= format.format(juros) %></td>
+                <td><%= format.format(amortizacao) %></td>
+                <td><%= format.format(juros) %></td>
+                <td><%= format.format(n1) %></td>
             </tr>
             
             <%
          
-            }
+                    }
             %>
               <tr>
-                <td><%= aux %></td>
-                <td><%= n1 + juros %></td>
-                <td><%= n1 %></td>
-                <td><%= juros %></td>
+                <td><%= format.format(aux) %></td>
+                <td><%= format.format(n1 + juros) %></td>
+                <td><%= format.format(n1) %></td>
+                <td><%= format.format(juros) %></td>
                 <td><%= 0 %></td>
             </tr>
                          
              
              <tr>
                 <td>Total</td>
-                <td><%= n1 + juros * aux %></td>
-                <td><%= n1 %></td>
-                <td><%= juros * aux %></td>
+                <td><%= format.format(n1 + juros * aux) %></td>
+                <td><%= format.format(n1) %></td>
+                <td><%= format.format(juros * aux) %></td>
             </tr>
         </table>
     </form>    

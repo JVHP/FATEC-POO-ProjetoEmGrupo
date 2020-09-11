@@ -4,6 +4,7 @@
 <%@include file="WEB-INF/jspf/style.jsp"%>
 <%@include file="WEB-INF/jspf/header.jsp"%>
 <%@include file="WEB-INF/jspf/menu.jsp"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,6 +21,8 @@
             <input type="submit" value="Enviar">
             
             <%
+            DecimalFormat format = new DecimalFormat("#####.##");    
+            
             Exception requestException = null;
             
             double pv, i, n, a, pagamento, j, total, total_amortizacao, total_juros;
@@ -53,13 +56,12 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td><%= pv %></td>
+                <td><%= format.format(pv) %></td>
             </tr>
             
             <%
             total_juros = 0;
             total_amortizacao = 0;
-            DecimalFormat format = new DecimalFormat("#####.##");
 
             pagamento = (pv)/((Math.pow(1+i,n)-1)/(Math.pow(1+i,n)*i));
 
