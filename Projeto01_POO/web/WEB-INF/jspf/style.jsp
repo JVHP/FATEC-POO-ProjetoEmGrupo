@@ -18,24 +18,13 @@
 	padding: 60px;
         margin-bottom: 0;
         
-        
-    }
-    .menu{
-        font-size: 17px;
-        
     }
     
-    .menu a{
+    .navbar{
+        font-size: 17px;
         padding: 10px;
         text-decoration: none;
         color: whitesmoke;
-        
-    }
-    
-    .menu a:hover{
-        padding: 10px;
-        text-decoration: none;
-        color: blue;
         
     }
     
