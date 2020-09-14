@@ -61,7 +61,7 @@
             
             <div class="table-sm" align="center">
                 <table class="table-dark table-bordered">
-                    <thead class="thead-dark">
+                    <thead class="table-spotlight">
                         <tr>
                             <th>Meses</th>
                             <th>Pagamento</th>
@@ -108,7 +108,7 @@
                             <td><%= format.format(juros) %></td>
                             <td><%= 0 %></td>
                         </tr>                    
-                        <tr>
+                        <tr class="table-spotlight">
                             <td>Total</td>
                             <td><%= format.format(n1 + juros * aux) %></td>
                             <td><%= format.format(n1) %></td>

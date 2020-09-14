@@ -53,7 +53,7 @@
             
             <div class="table-sm" align="center">
                 <table class="table-dark table-bordered">
-                    <thead class="thead-light">    
+                    <thead class="table-spotlight">    
                         <tr>
                             <th>Meses</th>
                             <th>Pagamento</th>
@@ -98,7 +98,7 @@
 
             total = total_amortizacao + total_juros;
             %>
-                        <tr>
+                        <tr class="table-spotlight">
                             <td>Total</td>
                             <td><%= format.format(total) %></td>
                             <td><%= format.format(total_amortizacao) %></td>

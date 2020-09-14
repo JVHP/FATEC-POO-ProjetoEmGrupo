@@ -47,4 +47,7 @@
         background-color: #262E33;
         
     }
+    .table-spotlight{
+        background-color: #2C3439;
+    }
 </style>
