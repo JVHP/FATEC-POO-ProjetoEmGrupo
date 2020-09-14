@@ -30,7 +30,7 @@
                     <input type="submit" value="Enviar" class="btn btn-primary">
             
             <%
-            DecimalFormat format = new DecimalFormat("#####.##");
+            DecimalFormat format = new DecimalFormat("####0.00");
             
             Exception requestException = null;
             float pv, i, n, a, pagamento, j, total, total_amortizacao, total_juros;
@@ -65,9 +65,9 @@
                     <tbody>
                         <tr>
                             <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><%= format.format(0) %></td>
+                            <td><%= format.format(0) %></td>
+                            <td><%= format.format(0) %></td>
                             <td><%= format.format(pv) %></td>
                         </tr>
                     
@@ -85,7 +85,7 @@
             pv = pv-a;
             %>
                         <tr>
-                            <td><%= format.format(x) %></td>
+                            <td><%= x %></td>
                             <td><%= format.format(pagamento) %></td>
                             <td><%= format.format(a) %></td>
                             <td><%= format.format(j) %></td>
