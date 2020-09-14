@@ -16,7 +16,7 @@
             <div class="col-12 row">
                 <div class="col-1"></div>
                 <div class="col-6">
-                    <h1>Bem vindo ao nosso site!</h1>
+                    <h1>Bem-vindo ao nosso site!</h1>
                     <h6>Conheça nosso grupo:</h6>
                     <ul>
                         <li>Gabriel Ferreira</li>
@@ -26,14 +26,14 @@
                     </ul>    
                 </div>
                 <div class="col-sm-5">
-                    <h1>O'que nosso site faz?</h1>
-                    <p>Nosso site faz o calculo de Amortização segundo aos sistemas Constante e Americano e tambem faz o calculo da Tabela-Price</p>
+                    <h1>O que nosso site faz?</h1>
+                    <p>Nosso site faz o cálculo de Amortização segundo aos sistemas Constante e Americano e tambem faz o calculo da Tabela-Price.</p>
                 </div> 
             </div>
         </div>
         
         <div align="center" style="padding: 20px;">
-            <h1>O'que são estes métodos?</h1>
+            <h1>O que são estes métodos?</h1>
         </div>
        
         <div class="container">
