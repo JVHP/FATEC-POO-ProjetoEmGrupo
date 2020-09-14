@@ -30,7 +30,7 @@
                         <input type="submit" value="Enviar" class="btn btn-primary">
 
             <%
-            DecimalFormat format = new DecimalFormat("#####.##");
+            DecimalFormat format = new DecimalFormat("####0.00");
             
             Exception requestException = null;
             float n1;
@@ -73,9 +73,9 @@
                     <tbody>
                         <tr>
                             <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td><%= format.format(0) %></td>
+                            <td><%= format.format(0) %></td>
+                            <td><%= format.format(0) %></td>
                             <td><%= format.format(n1) %></td>
                         </tr>
             
@@ -90,7 +90,7 @@
                 %>
             
                         <tr>
-                            <td><%= format.format(z) %></td>
+                            <td><%= z %></td>
                             <td><%= format.format(juros) %></td>
                             <td><%= format.format(amortizacao) %></td>
                             <td><%= format.format(juros) %></td>
@@ -102,11 +102,11 @@
                     }
             %>
                         <tr>
-                            <td><%= format.format(aux) %></td>
+                            <td><%= aux %></td>
                             <td><%= format.format(n1 + juros) %></td>
                             <td><%= format.format(n1) %></td>
                             <td><%= format.format(juros) %></td>
-                            <td><%= 0 %></td>
+                            <td><%= format.format(0) %></td>
                         </tr>                    
                         <tr class="table-spotlight">
                             <td>Total</td>
