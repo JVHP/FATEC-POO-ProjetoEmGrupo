@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-sm-5">
                     <h1>O que nosso site faz?</h1>
-                    <p>Nosso site faz o cálculo de Amortização segundo aos sistemas Constante e Americano e tambem faz o calculo da Tabela-Price.</p>
+                    <p>Nosso site faz o cálculo de Amortização segundo aos sistemas Constante e Americano e também faz o cálculo da Tabela-Price.</p>
                 </div> 
             </div>
         </div>
